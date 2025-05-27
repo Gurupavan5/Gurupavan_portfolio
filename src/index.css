@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input,
+textarea {
+  font-family: monospace;
+  background-color: #1e293b; /* Tailwind slate-800 */
+  color: #22c55e;           /* Tailwind green-500 */
+  caret-color: #ec8c0e;
+  transition: background-color 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #4ade80; /* Tailwind green-400 */
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop {
+  animation: pop 0.5s ease forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}

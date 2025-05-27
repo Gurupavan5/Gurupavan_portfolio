@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio showcasing creative work and professional skills" />
+    <title>GuruPavan | Creative Portfolio</title>
+    <style>
+      /* Custom loading animation */
+      .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ffffff;
+      }
+      .dark .loader {
+        background-color: #111827;
+      }
+      .dot-pulse {
+        position: relative;
+        left: -9999px;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #0ea5e9;
+        color: #0ea5e9;
+        box-shadow: 9999px 0 0 -5px;
+        animation: dot-pulse 1.5s infinite linear;
+        animation-delay: 0.25s;
+      }
+      .dot-pulse::before, .dot-pulse::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #0ea5e9;
+        color: #0ea5e9;
+      }
+      .dot-pulse::before {
+        box-shadow: 9984px 0 0 -5px;
+        animation: dot-pulse-before 1.5s infinite linear;
+        animation-delay: 0s;
+      }
+      .dot-pulse::after {
+        box-shadow: 10014px 0 0 -5px;
+        animation: dot-pulse-after 1.5s infinite linear;
+        animation-delay: 0.5s;
+      }
+      @keyframes dot-pulse-before {
+        0% { box-shadow: 9984px 0 0 -5px; }
+        30% { box-shadow: 9984px 0 0 2px; }
+        60%, 100% { box-shadow: 9984px 0 0 -5px; }
+      }
+      @keyframes dot-pulse {
+        0% { box-shadow: 9999px 0 0 -5px; }
+        30% { box-shadow: 9999px 0 0 2px; }
+        60%, 100% { box-shadow: 9999px 0 0 -5px; }
+      }
+      @keyframes dot-pulse-after {
+        0% { box-shadow: 10014px 0 0 -5px; }
+        30% { box-shadow: 10014px 0 0 2px; }
+        60%, 100% { box-shadow: 10014px 0 0 -5px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loader">
+        <div class="dot-pulse"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
