@@ -39,7 +39,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <a 
             href="#home" 
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 transition-all duration-300 hover:scale-105"
+            className="block animate-fade-in-up animation-delay-100 drop-shadow-[0_1px_10px_rgba(255,255,255,0.3)] text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-green-700 transition-all duration-300 hover:scale-105"
           >
             Portfolio
           </a>
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
               <a 
                 key={link.name} 
                 href={link.href}
-                className="relative text-green-700 dark:text-gray-200 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors duration-300 group"
+                className="relative text-blue-300 dark:text-gray-200 hover:text-blue-800 dark:hover:text-primary-400 font-medium transition-colors duration-300 group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             ))}
             <button 
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
+              className="p-2 rounded-full bg-gray-400 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-900 transition-colors duration-300"
               aria-label="Toggle theme"
             >
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}

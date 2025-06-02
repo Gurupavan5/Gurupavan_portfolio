@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import portfolioimage from '../assets/portfolioimage.jpg'; // Adjust the path as necessary
+import ab4 from '../assets/ab4.png'; // Adjust the path as necessary
+
 
 const AboutSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -11,9 +13,10 @@ const AboutSection: React.FC = () => {
     <section 
       id="about" 
       ref={sectionRef}
+      // style={{ backgroundImage: `url(${ab4})` }}
       className="py-20 bg-white dark:bg-gray-900"
     >
-      <div className="container mx-auto px-4 md:px-6">
+       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className={`w-full md:w-1/2 transition-all duration-1000 ${isInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
             <div className="relative">

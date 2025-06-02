@@ -40,3 +40,37 @@ textarea::placeholder {
 .animation-delay-400 {
   animation-delay: 0.4s;
 }
+
+@keyframes sandFade {
+  0%, 100% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+  50% {
+    opacity: 0;
+    background-position: 100% 100%;
+  }
+}
+
+/* Grainy noise texture overlay using a repeating linear-gradient pattern */
+/* You can replace this with an actual grain/noise image for better effect */
+
+.sand-text {
+  animation: sandFade 4s ease-in-out infinite;
+  /* Add a grainy overlay effect with background-blend-mode or mask */
+  background-image: 
+    linear-gradient(to right, #e66d0b 10%, #f00606 100%), /* your gradient */
+    url('https://www.transparenttextures.com/patterns/grain.png'); /* example noise texture */
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-repeat: repeat;
+  background-size: 150% 150%;
+  color: transparent;
+  animation-delay: 500ms;
+  animation-name: sandFade;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+

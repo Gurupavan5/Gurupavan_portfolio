@@ -106,11 +106,16 @@ interface Skill {
 
 const skills: Skill[] = [
   { name: "HTML/CSS", level: 100, icon: "🎨", color: "from-green-700 to-green-800" },
-  { name: "JavaScript", level: 85, icon: "🚀", color: "from-green-700 to-green-800" },
+  { name: "JavaScript", level: 85, icon: "⚡", color: "from-green-700 to-green-800" },
   { name: "React", level: 80, icon: "⚛️", color: "from-green-700 to-green-800" },
   { name: "TypeScript", level: 75, icon: "📘", color: "from-green-700 to-green-800" },
-  { name: "UI/UX Design", level: 70, icon: "🖌️", color: "from-green-700 to-green-800" },
+  { name: "UI/UX Design", level: 30, icon: "🖌️", color: "from-green-700 to-green-300" },
   { name: "Node.js", level: 65, icon: "🟢", color: "from-green-700 to-green-800" },
+  { name: "express.js", level: 100, icon: "🚀", color: "from-green-700 to-green-800" },
+  { name: "MongoDB", level: 70, icon: "📦", color: "from-green-700 to-green-800" },
+  { name: "Git/GitHub", level: 70, icon: "🐙", color: "from-green-700 to-green-800" },
+  { name: "Tailwind CSS", level: 90, icon: "🌊", color: "from-green-700 to-green-800" },
+  { name: "Next.js", level: 50, icon: "🔗", color: "from-green-700 to-green-800" },
 ];
 
 const SkillsSection: React.FC = () => {

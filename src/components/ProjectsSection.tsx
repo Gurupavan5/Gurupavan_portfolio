@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import thumbforproject from '../assets/thumbforproject.webp'; // Adjust the path as necessary
 
 interface Project {
   id: number;
@@ -15,12 +16,12 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A full-featured online store with cart functionality, user authentication, and payment processing.",
-    image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Serpant",
+    description: "As our final project adventure, I built a clever website that teaches AI to tell venomous snakes from harmless ones—because nobody wants to mistake a sassy snake for a friendly garden hose!",
+    image: thumbforproject,
     tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Gurupavan5",
+    demo: " https://gurupavan5.github.io/serpant/"
   },
   {
     id: 2,

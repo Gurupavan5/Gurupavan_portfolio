@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 // import { ArrowDown } from 'lucide-react';
-import forback from '../assets/forback.jpg'; // Adjust the path as necessary
-import charliechap from '../assets/charliechap.gif'; // Adjust the path as necessary
-
+// import forback from '../assets/forback.jpg'; // Adjust the path as necessary
+import ait1 from '../assets/ait1.png'; // Adjust the path as necessary for dropdown arrow
+import ab2 from '../assets/ab2.png'; // Adjust the path as necessary for main page background image
 
 
 const HeroSection: React.FC = () => {
@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
   const [currentEmoji, setCurrentEmoji] = React.useState('😊');
   
   useEffect(() => {
-    const emojis = ['😊', '😄', '🥰', '😎', '🙈','☺️','👀','😉','😁','😋','🙃'];
+    const emojis = ['😊', '🥰', '😎','☺️','👀','😉','😁','😋','🙃'];
     let currentIndex = 0;
     
     const interval = setInterval(() => {
@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
     >
        <div
     className="absolute inset-0 bg-cover bg-center -z-20"
-    style={{ backgroundImage: `url(${forback})` }}
+    style={{ backgroundImage: `url(${ab2})` }}
   />
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-[10%] w-64 h-64 rounded-full bg-secondary-700 blur-[100px] animate-blob"></div>
@@ -62,21 +62,21 @@ const HeroSection: React.FC = () => {
            }}>
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight text-white">
-            <span className="inline-block animate-fade-in-up animation-delay-100">HeLLO</span> <br />
+            <span className="inline-block animate-fade-in-up animation-delay-100"> Hello  </span> <br />
             <span className="inline-block animate-fade-in-up animation-delay-300 bg-gradient-to-r"> I'm </span><br />
-            <span className="inline-block animate-fade-in-up animation-delay-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400"> Pavan</span>
+            <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r sand-text">Pavan</span>
             <span className="inline-block text-4xl ml-2">{currentEmoji}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed animate-fade-in-up animation-delay-700">
             I create <span className="font-semibold text-secondary-400">delightful</span> digital experiences 
-            with a touch of <span className="font-semibold text-accent-400">magic</span> ✨
+            with a touch of <span className="font-semibold text-yellow-400">magic</span> ✨
           </p>
           
-          <div className="flex flex-wrap justify-center gap-4 mt-8 animate-fade-in-up animation-delay-1000">
+          {/* <div className="flex flex-wrap justify-center gap-4 mt-8 animate-fade-in-up animation-delay-1000">
             <a 
               href="#projects" 
-              className="px-6 py-3 bg-secondary-600 hover:bg-secondary-700 text-white rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="px-6 py-3 bg-yellow-600 hover:bg-red-700 text-white rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               View My Work
             </a>
@@ -86,16 +86,16 @@ const HeroSection: React.FC = () => {
             >
               Get In Touch
             </a>
-          </div>
+          </div> */}
         </div>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
   <a href="#about" className="flex flex-col items-center cursor-pointer">
     <img
-      src={charliechap}
-      alt="Charlie Chaplin falling animation"
-      className="w-12 h-12"
-      style={{ animation: 'bounce 2s infinite' }}
+      src={ait1}
+      alt="arrow to scroll down"
+      className="w-12 h-18 mb-2 animate-bounce"
+      style={{ animation: 'bounce 5s infinite' }}
     />
   </a>
 </div>
