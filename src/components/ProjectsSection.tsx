@@ -2,7 +2,9 @@ import React, { useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import thumbforproject from '../assets/thumbforproject.webp'; // Adjust the path as necessary
-
+import comp from '../assets/comp.png'; // Adjust the path as necessary for Dev Deck image
+import aib1 from '../assets/aib1.png'; // Adjust the path as necessary for Portfolio image
+import ab3 from '../assets/ab3.png'; // Adjust the path as necessary for ongoing project image
 interface Project {
   id: number;
   title: string;
@@ -25,28 +27,28 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A productivity app with drag-and-drop task organization, reminders, and collaborative features.",
-    image: "https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Dev Deck",
+    description: " Discover a collection of stunning 3D components powered by Web3 technology. Build the future of web interfaces. ",
+    image: comp,
     tags: ["React", "Firebase", "Tailwind CSS"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Gurupavan5",
+    demo: "https://gurupavan5.github.io/DevDeck/"
   },
   {
     id: 3,
     title: "Portfolio Website",
     description: "A personal portfolio showcasing projects and skills with a unique interactive design.",
-    image: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: aib1,
     tags: ["React", "Three.js", "GSAP"],
     github: "#",
     demo: "#"
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    description: "Real-time weather information with forecasts, historical data, and interactive maps.",
-    image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    tags: ["React", "OpenWeather API", "Chart.js"],
+    title: "ongoing Learn any topic in story format",
+    description: "An innovative platform that transforms complex topics into engaging stories, making learning fun and accessible.",
+    image: ab3,
+    tags: ["React", "Node.js", "Express", "MongoDB"],
     github: "#",
     demo: "#"
   },
