@@ -90,15 +90,21 @@ const HeroSection: React.FC = () => {
         </div>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-  <a href="#about" className="flex flex-col items-center cursor-pointer">
-    <img
-      src={ait1}
-      alt="arrow to scroll down"
-      className="w-12 h-18 mb-2 animate-bounce"
-      style={{ animation: 'bounce 5s infinite' }}
-    />
-  </a>
-</div>
+        <a href="#about" className="flex flex-col items-center cursor-pointer">
+          <img
+            src={ait1}
+            alt="arrow to scroll down"
+            className="w-12 h-18 mb-2 animate-bounce"
+            style={{ animation: 'bounce 5s infinite' }}
+          />
+        </a>
+      </div>
+            {/* 🧾 Scrolling Bulletin */}
+      <div className="absolute bottom-0 w-full overflow-hidden bg-black text-white z-50 h-10 flex items-center">
+        <div className="whitespace-nowrap animate-marquee text-sm md:text-base font-medium px-8">
+          🚨 Breaking News: Pavan is coding magical web experiences ✨ | 🔥 Frontend wizardry in action! | 🧠 Learning More Skills with joy 😄 | 💼 More projects incoming...
+        </div>
+      </div>
 
       </div>
     </section>
