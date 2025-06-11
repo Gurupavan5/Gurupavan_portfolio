@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import portfolioimage from '../assets/portfolioimage.jpg'; // Adjust the path as necessary
-import ab4 from '../assets/ab4.png'; // Adjust the path as necessary
+// import ab4 from '../assets/ab4.png'; // Adjust the path as necessary
 
 
 const AboutSection: React.FC = () => {

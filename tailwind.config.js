@@ -47,6 +47,7 @@ export default {
         'skill-fill': 'skillFill 1s ease-out forwards',
         'blob': 'blob 7s infinite',
         'emoji-change': 'emojiChange 4s infinite',
+        'marquee': 'marquee 20s linear infinite', // 🔥 Added marquee
       },
       keyframes: {
         fadeInUp: {
@@ -69,6 +70,11 @@ export default {
           '50%, 70%': { content: '"🥰"' },
           '75%, 95%': { content: '"😎"' },
           '100%': { content: '"😊"' },
+        },
+        // 🟠 Added marquee keyframes
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },

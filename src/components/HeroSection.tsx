@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed animate-fade-in-up animation-delay-700">
-            I create <span className="font-semibold text-secondary-400">delightful</span> digital experiences 
+            I create <span className="font-semibold text-orange-700">delightful</span> digital experiences 
             with a touch of <span className="font-semibold text-yellow-400">magic</span> ✨
           </p>
           
@@ -88,24 +88,22 @@ const HeroSection: React.FC = () => {
             </a>
           </div> */}
         </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+      </div>
+      {/* Move arrow and bulletin outside the transformed container so they are not affected by transforms */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
         <a href="#about" className="flex flex-col items-center cursor-pointer">
           <img
             src={ait1}
             alt="arrow to scroll down"
             className="w-12 h-18 mb-2 animate-bounce"
-            style={{ animation: 'bounce 5s infinite' }}
           />
         </a>
       </div>
-            {/* 🧾 Scrolling Bulletin */}
+      {/* 🧾 Scrolling Bulletin */}
       <div className="absolute bottom-0 w-full overflow-hidden bg-black text-white z-50 h-10 flex items-center">
         <div className="whitespace-nowrap animate-marquee text-sm md:text-base font-medium px-8">
           🚨 Breaking News: Pavan is coding magical web experiences ✨ | 🔥 Frontend wizardry in action! | 🧠 Learning More Skills with joy 😄 | 💼 More projects incoming...
         </div>
-      </div>
-
       </div>
     </section>
   );
